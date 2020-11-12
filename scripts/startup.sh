@@ -13,6 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+version="3.10.0-1160.2.2.el7.x86_64"
+uname=`uname -r`
+if [ $uname != $version ]; then
+        yum update -y
+        reboot
+fi
+
 PACKAGES=(
         'bind-utils'
         'environment-modules'
