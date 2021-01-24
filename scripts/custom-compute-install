@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+mkdir -p /home/data
+ln -s /home/data /data
+#chmod -R 775 /home/data
